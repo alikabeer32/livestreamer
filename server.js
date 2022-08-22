@@ -25,7 +25,7 @@ app.get('/watch', function(req, res){
 
 const PORT = process.env.PORT || 5000;
 
-const server = http.listen(PORT, () => console.log(`Chalu hai ${PORT} par`));
+const server = http.listen(PORT, () => console.log(`Live on ${PORT}`));
 
 
 
