@@ -24,9 +24,7 @@ var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || nav
 navigator.mediaDevices.getUserMedia({
   video: false, 
   audio: false}).then(stream => {
-  alert("we here");
   call.on('stream', function(remoteStream) {
-    alert("we here?");
     // Show stream in some video/canvas element.
     console.log(player);
     player.src = remoteStream;
